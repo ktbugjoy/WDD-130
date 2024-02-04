@@ -13,10 +13,11 @@
       <a class='join' href="rivers.html">Join Us</a>
     </section>
     <footer>
-      <!-- Footer content goes here -->
+      <!-- Footer content goes here --!>
     </footer>
   </div>
 </body>
+<style>
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -27,6 +28,7 @@
     --secondary-color: #E7C24F ;
     --accent1-color: #A42212;
     --accent2-color: #202030;
+  }
   /* Centering the links inside the navigation */
   nav a {
     text-align: center;
@@ -100,4 +102,4 @@
   footer p a:hover {
     text-decoration: underline;
   }
-  
+  </style>
