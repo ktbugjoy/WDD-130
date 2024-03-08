@@ -18,88 +18,116 @@
   </div>
 </body>
 <style>
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400&display=swap');
+
+/* Reset styles */
+body, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  background-color: var(--primary-color);
+  font-family: 'Georgia', serif;
+}
+
 #content {
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-  :root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #396E94   ;
-    --secondary-color: #E7C24F ;
-    --accent1-color: #A42212;
-    --accent2-color: #202030;
-  }
-  /* Centering the links inside the navigation */
-  nav a {
-    text-align: center;
-    color: #fcfbfb;
-    text-decoration: none;
-  }
-  
-  /* Centering h1 and h4 inside #hero-msg */
-  #hero-msg h1,
-  #hero-msg h4 {
-    text-align: center;
-  }
-  
-  /* Centering the content inside .button-box */
-  .button-box,
-  main section {
-    text-align: center;
-  }
-  
-  #background {
-    height: 725px;
-    background-color: var(--secondary-color);
-  }
-  
-  /* Background color for the entire body */
-  body {
-    background-color: var(--primary-color);
-  }
-  
-  /* Background color for the header with some transparency */
-  header {
-    background-color: rgba(57, 110, 148, 0.7);
-  }
-  
-  /* Background color for navigation links on hover */
-  nav a:hover {
-    background-color: black;
-    color: #d9c2a3;
-  }
-  
-  /* Background color for .book and .join classes */
-  .book,
-  .join {
-    background-color: var(--secondary-color);
-  }
-  
-  /* Background color for .book and .join classes on hover */
-  .book:hover,
-  .join:hover {
-    background-color: var(--accent1-color);
-  }
-  
-  /* Background color for the .msg section */
-  .msg {
-    background-color: var(--accent1-color);
-  }
-  
-  /* Background color for the footer */
-  footer {
-    background-color: var(--secondary-color);
-  }
-  
-  .icon {
-    width: 80px;
-  }
-  
-  footer p {
-    font-size: 1.2em;
-  }
-  
-  footer p a:hover {
-    text-decoration: underline;
-  }
-  </style>
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+:root {
+  --primary-color: #E8F5F8;
+  --secondary-color: #95D1DF;
+  --accent1-color: #95D1DF;
+  --accent2-color: #275174;
+}
+
+/* Typography styles */
+body, h1, h2, h3, h4, p, a, .home-title, .msg h2 {
+  font-family: 'Georgia', serif;
+}
+
+body, h1, h2, h3, h4, p, a {
+  font-family: 'Georgia', serif;
+  font-family: 'Times New Roman', Times, serif; /* Backup font 1 */
+  font-family: 'Arial', sans-serif; /* Backup font 2 */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Backup font 1 */
+  font-family: 'Verdana', sans-serif; /* Backup font 2 */
+}
+
+/* Padding and margin adjustments */
+.home-title {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.book, .join {
+  font-size: 18px;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.msg {
+  font-size: 0.8em;
+  padding: 35px;
+}
+
+.msg p {
+  padding-bottom: 15px;
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
+nav a {
+  padding: 35px;
+}
+
+.icon {
+  padding-top: 10px;
+}
+
+footer {
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
+
+/* Card styles */
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+  border: 10px solid #275174;
+}
+
+/* Box-sizing adjustment */
+main section img {
+  box-sizing: border-box;
+}
+
+/* Hover styles */
+nav a:hover {
+  background-color: black;
+  color: #d9c2a3;
+}
+
+.book, .join:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Header styles */
+header {
+  background-color: rgba(57, 110, 148, 0.7);
+}
+</style>
